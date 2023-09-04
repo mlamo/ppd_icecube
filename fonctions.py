@@ -63,24 +63,31 @@ def liste_sources(groupe, fichier="inputs/sources.csv", ):
         raise RuntimeError("Nom de groupe inconnu !")  
     return df.to_dict(orient="records")
 
-def dessiner_histogramme(fichier_de_sortie, variable, nom, couleur="blue", nbBins=20, ax_min=None, ax_max=None):
+def dessiner_histogramme(fichier_de_sortie, variable, nom, couleur="blue", nbBins=20, ax_min=None, ax_max=None, titre=None):
     range = [ax_min if ax_min is not None else np.min(variable), ax_max if ax_max is not None else np.max(variable)]
+    plt.figure()
     plt.hist(variable, color=couleur, histtype="bar", bins=nbBins, range=range)
     plt.xlabel(nom, fontsize=15)
     plt.ylabel("Nombre d'événements par bin", fontsize=15)
+    if titre is not None:
+        plt.title(titre)
     plt.tight_layout()
     plt.savefig(f"figures/{fichier_de_sortie}.png", dpi=300)
     
-def dessiner_histogramme_2d(fichier_de_sortie, variable1, variable2, nom1, nom2, echelle_couleur="Blues", nbBins1=20, nbBins2=20):
+def dessiner_histogramme_2d(fichier_de_sortie, variable1, variable2, nom1, nom2, echelle_couleur="Blues", nbBins1=20, nbBins2=20, titre=None):
+    plt.figure()
     plt.hist2d(variable1, variable2, bins=(nbBins1, nbBins2), cmap=echelle_couleur)
     plt.xlabel(nom1, fontsize=15)
     plt.ylabel(nom2, fontsize=15)
+    if titre is not None:
+        plt.title(titre)
     plt.tight_layout()
     plt.savefig(f"figures/{fichier_de_sortie}.png", dpi=300)
     
 def dessiner_carte(fichier_de_sortie, ra, dec, couleur="blue", titre=None):
     if titre is None:
         titre = "Carte en coordonnées équatoriales"
+    plt.figure()
     hp.mollview(rot=180, title=titre)
     hp.projscatter(ra, dec, lonlat=True, color=couleur, s=1, marker="x")
     hp.graticule()
@@ -93,6 +100,7 @@ def dessiner_carte_histogramme(fichier_de_sortie, ra, dec, echelle_couleur="Blue
     pixs = hp.ang2pix(2**resolution, ra, dec, lonlat=True)
     for pix in pixs:
         h[pix] += 1
+    plt.figure()
     hp.mollview(h, rot=180, title=titre, cmap=echelle_couleur)
     hp.graticule()
     plt.savefig(f"figures/{fichier_de_sortie}.png", dpi=300)
