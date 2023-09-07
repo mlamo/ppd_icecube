@@ -51,16 +51,18 @@ def liste_sources(groupe, fichier="inputs/sources.csv", ):
     df = pd.read_csv(fichier)
     df = df[["Name", "Ra", "Dec"]]
     df = df.rename(columns={"Name": "Nom", "Ra": "RA(source)", "Dec":"Dec(source)"})
-    if groupe == "A":
-        df = df.iloc[[5, 8, 9, 12, 39, 42, 63, 69, 94]]
-    elif groupe == "B":
-        df = df.iloc[[1, 2, 4, 33, 81, 88, 91, 98, 108]]
-    elif groupe == "A+B":
-        df = df.iloc[[5, 8, 9, 12, 39, 42, 63, 69, 94]+[1, 2, 4, 33, 81, 88, 91, 98, 108]]
+    if groupe == "Dr. Strangepork":
+        df = df.iloc[[4, 8, 9, 12, 39, 42, 63, 91, 94, 95]]
+    elif groupe == "Animal":
+        df = df.iloc[[1, 2, 4, 39, 81, 87, 88, 91, 98, 108]]
+    elif groupe == "Camilla the Chicken":
+        df = df.iloc[[3, 9, 10, 12, 39, 51, 88, 91, 106, 109]]
+    elif groupe == "Trois groupes":
+        df = df.iloc[[1,2,3,4,8,9,10,12,39,42,51,63,81,87,88,91,94,95,98,106,108,109]]
     elif groupe == "Toutes":
         df = df
     else:
-        raise RuntimeError("Nom de groupe inconnu !")  
+        raise RuntimeError("Nom de groupe inconnu ! Les groupes sont 'Dr. Strangepork', 'Animal' et 'Camilla the Chicken'")  
     return df.to_dict(orient="records")
 
 def dessiner_histogramme(fichier_de_sortie, variable, nom, couleur="blue", nbBins=20, ax_min=None, ax_max=None, titre=None):
