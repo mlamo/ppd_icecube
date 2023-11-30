@@ -1,5 +1,9 @@
 [![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-blueviolet.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+The material in this repository was used for the [Physics Project Days 2023](https://uclouvain.be/fr/facultes/sc/physics-project-days.html). This is a 3-day project for high-school students, where they have an introduction to programming in Python and perform a first analysis of IceCube data. It can also be combined with some activities related to the [IceCube Masterclass](https://masterclass.icecube.wisc.edu/).
+
+The project was intially developed for the [Université Catholique de Louvain](https://uclouvain.be/en/research-institutes/irmp/cp3) in Belgium, so the instructions are written in French, but the CC BY-NC-SA license allows for any free translations to a most convenient language if you plan to use in a different context.
+
 # Overview
 
 There are three main notebooks:
