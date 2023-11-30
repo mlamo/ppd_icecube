@@ -19,5 +19,7 @@ Assume we are starting from a fresh install of Ubuntu and Python 3, with the use
 * close and delete the copy of ppd
 * turn down the volume
 * set keyboard layout back to AZERTY
+* download IceCube point-source datasets: [here](https://icecube.wisc.edu/data-releases/2021/01/all-sky-point-source-icecube-data-years-2008-2018/)
+* copy them in `inputs/icecube_10years_ps` and make sure `fonctions.py` points to the correct path.
 
 Bug reports etc. for the installer to [chraab@icecube.wisc.edu](mailto:chraab@icecube.wisc.edu) 

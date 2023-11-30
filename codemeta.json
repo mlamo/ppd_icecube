@@ -1,0 +1,73 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "codeRepository",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "codeRepository": "https://cp3-git.irmp.ucl.ac.be/astro/outreach/ppd_icecube_2023",
+    "dateCreated": "TBD",
+    "datePublished": "TBD",
+    "dateModified": "TBD",
+    "downloadUrl": "https://cp3-git.irmp.ucl.ac.be/astro/outreach/ppd_icecube_2023.git",
+    "issueTracker": "https://cp3-git.irmp.ucl.ac.be/astro/outreach/ppd_icecube_2023/-/issues",
+    "name": "Physics Project Days - IceCube",
+    "version": "0.0.1",
+    "description": "This repository contains the instructions and materials for the Physics Project Days, a 3-day event for high-school students with a small research project.",
+    "applicationCategory": "Outreach",
+    "releaseNotes": "Version used for 2023 edition.",
+    "referencePublication": "TBD",
+    "developmentStatus": "active",
+    "softwareVersion": "1.0.0",
+    "keywords": [
+        "IceCube",
+        "outreach",
+        "physics",
+        "neutrinos",
+        "high-school"
+    ],
+    "programmingLanguage": [
+        "Python 3"
+    ],
+    "operatingSystem": [
+        "Linux",
+        "Windows"
+    ],
+    "softwareRequirements": [
+        "Python 3.8"
+    ],
+    "author": [
+        {
+            "@type": "Person",
+            "@id": "https://orcid.org/0000-0002-8860-5826",
+            "givenName": "Mathieu",
+            "familyName": "Lamoureux",
+            "email": "mathieu.lamoureux@uclouvain.be",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "UCLouvain"
+            }
+        },
+        {
+            "@type": "Person",
+            "@id": "https://orcid.org/0000-0001-9921-2668",
+            "givenName": "Christoph",
+            "familyName": "Raab",
+            "email": "chraab@icecube.wisc.edu",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "UCLouvain"
+            }
+        }
+    ],
+    "maintainer": [
+        {
+            "@type": "Person",
+            "@id": "https://orcid.org/0000-0002-8860-5826",
+            "givenName": "Mathieu",
+            "familyName": "Lamoureux",
+            "email": "mathieu.lamoureux@uclouvain.be",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "UCLouvain"
+            }
+        }
+    ]
+}
