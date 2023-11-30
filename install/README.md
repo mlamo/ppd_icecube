@@ -1,4 +1,4 @@
-Assume we are starting from a fresh install of Ubuntu and Python 3.
+Assume we are starting from a fresh install of Ubuntu and Python 3, with the user `student`.
 
 # Checklist for before (not yet automated)
 
@@ -19,3 +19,5 @@ Assume we are starting from a fresh install of Ubuntu and Python 3.
 * close and delete the copy of ppd
 * turn down the volume
 * set keyboard layout back to AZERTY
+
+Bug reports etc. for the installer to [chraab@icecube.wisc.edu](mailto:chraab@icecube.wisc.edu) 
