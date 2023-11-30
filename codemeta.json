@@ -2,14 +2,13 @@
     "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
     "@type": "codeRepository",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "codeRepository": "https://cp3-git.irmp.ucl.ac.be/astro/outreach/ppd_icecube_2023",
+    "codeRepository": "https://github.com/mlamo/ppd_icecube",
     "dateCreated": "TBD",
     "datePublished": "TBD",
     "dateModified": "TBD",
-    "downloadUrl": "https://cp3-git.irmp.ucl.ac.be/astro/outreach/ppd_icecube_2023.git",
-    "issueTracker": "https://cp3-git.irmp.ucl.ac.be/astro/outreach/ppd_icecube_2023/-/issues",
+    "downloadUrl": "https://github.com/mlamo/ppd_icecube.git",
     "name": "Physics Project Days - IceCube",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "This repository contains the instructions and materials for the Physics Project Days, a 3-day event for high-school students with a small research project.",
     "applicationCategory": "Outreach",
     "releaseNotes": "Version used for 2023 edition.",
@@ -31,7 +30,7 @@
         "Windows"
     ],
     "softwareRequirements": [
-        "Python 3.8"
+        "Python >=3.8"
     ],
     "author": [
         {

@@ -4,12 +4,16 @@ The material in this repository was used for the [Physics Project Days 2023](htt
 
 The project was intially developed for the [Université Catholique de Louvain](https://uclouvain.be/en/research-institutes/irmp/cp3) in Belgium, so the instructions are written in French, but the CC BY-NC-SA license allows for any free translations to a most convenient language if you plan to use in a different context.
 
+**Credits:** see `codemeta.json`.
+
 # Overview
 
 There are three main notebooks:
 - `introduction_python.ipynb` contains a basic introduction to Python programming
 - `project_work.ipynb` is the main notebook for students, with cells to fill
 - `project_solution.ipynb` is a proposed solution to questions in `project_work.ipynb`
+
+The slides in `slides/PPD_2023_IceCube.pdf` are distributed as reference but are not part of the Copyright License. They should not be all presented immediately, as the final part of the slides are giving some important hints (or even solutions) for questions that may raise during the project.
 
 # Input files
 
